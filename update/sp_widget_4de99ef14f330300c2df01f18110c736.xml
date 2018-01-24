@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	/* 3 $scope.firstname= "Kumaril";
+	 $scope.lastname= "Bhatt";*/
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>my-ang-1</id>
+        <internal>false</internal>
+        <link/>
+        <name>My angular corce 1</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	//1 data.name='kumar';
+	
+	/* 2 data.name=2;
+	data.name1=3;	*/
+	
+	data.color="lightblue";
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-22 09:51:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4de99ef14f330300c2df01f18110c736</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>My angular corce 1</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_update_name>sp_widget_4de99ef14f330300c2df01f18110c736</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-22 10:55:43</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+
+  
+  <input type="text" style="background-color:{{data.color}}" ng-model="data.color" value="{{data.color}}">
+  
+  
+  
+  
+  
+  
+  
+  <!--3<div>
+    First Namae: <input type="text" ng-model="firstname"/><br>
+    Last Name:<input type="test" ng-model="lastname"/>
+    
+    <br>
+    
+    <h1>Full Name is: {{firstname}}   {{lastname}}
+  
+    </h1></div>
+  
+  -->
+  
+  
+  <!-- 2
+  <div ng-app="">
+    <h1>my First maths expresion : {{data.name+data.name1}}</h1>
+    
+  </div> -->
+  
+  
+  
+  
+<!--- 1 <div ng-app="">
+ 
+<p>Input something in the input box:</p>
+<p>Name : <input type="text" ng-model="data.name" ></p>
+<h1>Hello {{data.name}}</h1>
+
+</div>-->
+</div>]]></template>
+    </sp_widget>
+</record_update>
